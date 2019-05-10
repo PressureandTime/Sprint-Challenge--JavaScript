@@ -40,13 +40,13 @@ function CuboidMaker(length, width, height){
 }
 
 CuboidMaker.prototype.volume = function(){
-  return `volume is ${this.length}  ${this.width} * ${this.height}`;
+  return this.length * this.width * this.height;
 }
 
 
 CuboidMaker.prototype.surface = function(){
-  return `cuboid surface area of a cube: 2 * (${this.length}* ${this.width} + ${this.length} * ${this.height}
-     + ${this.width} *  ${this.height})`;
+
+  return  2 * (this.length * this.width + this.length * this.height + this.width * this.height);
 
 }
 
