@@ -7,12 +7,40 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
+function consume(quote,quote2, callback){ 
+  var myQuote = "Like I always say, " + quote + quote2;
+  callback(myQuote);
+}
+
+function logQuote(quote){
+  console.log(quote);
+}
+
+consume("eat your vegetables!", "eat your fruits", logQuote); 
+
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
   * Create a function named multiply that returns the product of two numbers 
-  * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
+  * Create a function named greeting that accepts a first and last name and returns 
+  * "Hello first-name last-name, nice to meet you!"
 */
+
+function add(callback){
+  callback(a + b);
+}
+
+
+
+
+function consume1(callback){
+
+} 
+
+
+
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
