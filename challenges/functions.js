@@ -8,7 +8,6 @@
  */
 
 function consume(param1, param2, param3, callback) {
-
   return callback(param1, param2, param3); 
 }
 
@@ -20,8 +19,9 @@ function consume(param1, param2, param3, callback) {
  */
 
 
-function add(param1, param2,param3) {
-  return param1 + param2+param3;
+function add(param1, param2, param3) {
+  const beta = param1 + param2 + param3;
+  return beta;
 }
 
 function multiply(param1, param2, param3) {
@@ -35,12 +35,33 @@ function greeting() {
 }
 
 
-
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,3,add); // 4
 consume(10,16,15,multiply); // 160
 consume("Mary","Poppins","john", greeting); // Hello Mary Poppins, nice to meet you!
 console.log(consume(1,2,3,add));
+
+
+function glavna(param1,param2,callback1){
+  return callback1(param1,param2);
+}
+
+function sluga1(param1,param2){
+  const alfa =param1 * param2;
+  return alfa;
+}
+
+function sluga2(param1,param2){
+  const beta = param1 + param2;
+  return beta;
+}
+
+// glavna(100,100,sluga1);
+console.log(glavna(251,250,sluga2));
+
+
+
+
 
 // ==== Closures ====
 
