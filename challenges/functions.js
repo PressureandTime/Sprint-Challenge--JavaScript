@@ -30,7 +30,7 @@ function multiply(param1, param2, param3) {
 }
 
 function greeting() {
-  const delta = 'hello, today is sunny day!';
+  const delta = 'Hello Mary Poppins, nice to meet you!';
   return delta;
 }
 
@@ -39,7 +39,11 @@ function greeting() {
 consume(2, 2, 3, add); // 4
 consume(10, 16, 15, multiply); // 160
 consume('Mary', 'Poppins', 'john', greeting); // Hello Mary Poppins, nice to meet you!
-console.log(consume(1, 2, 3, add));
+
+console.log(consume(1, 2, 3, greeting));
+
+
+// console.log(consume(1, 2, 3, add));
 
 
 // ANOTHER CALL BACK FUNCTIOM EXAMPLE FOR PRACTISE
