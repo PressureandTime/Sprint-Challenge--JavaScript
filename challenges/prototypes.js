@@ -38,13 +38,9 @@ CuboidMaker.prototype.volume = function () {
   return this.length * this.width * this.height;
 };
 
+
 CuboidMaker.prototype.surface = function () {
-  return (
-    2
-    * (this.length * this.width
-      + this.length * this.height
-      + this.width * this.height)
-  );
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
 };
 
 const testobject = new CuboidMaker(4, 5, 5);

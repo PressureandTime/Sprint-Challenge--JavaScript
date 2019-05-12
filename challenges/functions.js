@@ -46,7 +46,7 @@ console.log(consume(1, 2, 3, greeting));
 // console.log(consume(1, 2, 3, add));
 
 
-// ANOTHER CALL BACK FUNCTIOM EXAMPLE FOR PRACTISE
+// ANOTHER CALL BACK FUNCTION EXAMPLE FOR PRACTISE
 
 function glavna(param1, param2, callback) {
   return callback(param1, param2);
