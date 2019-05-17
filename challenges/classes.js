@@ -1,4 +1,4 @@
-class CuboidMakers {
+class CuboidMaker2 {
   constructor(cuboidData) {
     this.length = cuboidData.length;
     this.width = cuboidData.width;
@@ -19,14 +19,14 @@ class CuboidMakers {
   }
 }
 
-class CubeMaker extends CuboidMakers {
+class CubeMaker extends CuboidMaker2 {
   constructor(cuboidData) {
     super(cuboidData);
     this.size = cuboidData.size;
   }
 }
 
-const test = new CuboidMakers({
+const test = new CuboidMaker2({
   length: 4,
   width: 5,
   height: 5,
