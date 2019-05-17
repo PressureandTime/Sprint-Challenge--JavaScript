@@ -18,7 +18,6 @@ function consume(param1, param2, param3, callback) {
  * "Hello first-name last-name, nice to meet you!"
  */
 
-
 function add(param1, param2, param3) {
   const beta = param1 + param2 + param3;
   return beta;
@@ -36,9 +35,9 @@ function greeting(param1, param2, param3) {
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 
-consume(2, 2, 1, add); 
-consume(10, 16, 15, multiply); 
-console.log(consume('Mary', 'Poppins', 'John', greeting)); 
+consume(2, 2, 1, add);
+consume(10, 16, 15, multiply);
+console.log(consume('Mary', 'Poppins', 'John', greeting));
 
 // ==== Closures ====
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.

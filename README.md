@@ -25,39 +25,44 @@ In meeting the minimum viable product (MVP) specifications listed below, you sho
 ## Self-Study Questions
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
-
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+Well, the forEach() method doesn’t actually return anything. It simply calls a provided function on each element in your array. This callback is allowed to mutate the calling array. Meanwhile, the map() method will also call a provided function on every element in the array. The difference is that map() utilizes re
 
-.map and creates a new array while .forEach doesn't
+
 
 2. What is the difference between a function and a method?
+A function is a piece of code that is called by name. It can be passed data to operate on and can optionally return data. All data that is passed to a function is explicitly passed. A method is a piece of code that is called by a name that is associated with an object. In most respects it is identical to a function except for two key differences:
+ - method is implicitly passed the object on which it was called.
+ - method is able to operate on data that is contained within the class
 
-method is basically function inside some object
+
 
 3. What is closure?
+A closure is a function which has access to the variable from another function’s scope. This is accomplished by creating a function inside a function. Of course, the outer function does not have access to the inner scope.
 
-A closure is a function having access to the parent scope, even after the parent function has closed.
+
 
 4. Describe the four rules of the 'this' keyword.
-
 1.Is the function called by new?
 2.Is the function called by call(), apply(), or bind()?
 3.Is the function called as a method, ie: obj.func()?
 4.Is the function called in the global scope?
 
 1.Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
-
 2.Whenever a function is called by a preceding dot, the object before that dot is this.
-
 3.Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
-
 4.Whenever JavaScript’s call or apply method is used, this is explicitly defined.
 
-5. Why do we need super() in an extended class?
 
-we need super in order to extended class inherits properties of base class.
+
+
+5. Why do we need super() in an extended class?
+We need super in order to extended class inherits properties of base class.
+
+
+
 
 ## Project Set up
 
